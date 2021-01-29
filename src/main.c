@@ -6,9 +6,19 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int main (void)
+int check_min_num(int a, int b)
 {
-    printf("Salut");
+    if (a <= b)
+        return a;
+    return b;
+}
+
+int main (int ac, char **av)
+{
+    int a = atoi(av[1]), b = atoi(av[2]);
+
+    printf("Mon plus petit nombre est le %d \n", check_min_num(a, b));
     return 0;
 }
