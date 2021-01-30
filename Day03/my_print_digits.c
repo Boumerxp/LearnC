@@ -2,13 +2,13 @@
 ** Tryhard PROJECT, 2021
 ** LearnC
 ** File description:
-** my_print_revalpha
+** my_print_digits
 */
 
 #include <unistd.h>
 
-int my_print_revalpha (void)
+int my_print_digits (void)
 {
-    write(1,"zyxwvutsrqponmlqjihgfedcba", 27);
+    write(1,"0123456789", 11);
     return 0;
 }

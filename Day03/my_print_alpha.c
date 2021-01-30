@@ -10,4 +10,5 @@
 int my_print_alpha (void)
 {
     write(1,"abcdefghijqlmnopqrstuvwxyz", 27);
+    return 0;
 }
