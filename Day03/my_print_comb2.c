@@ -14,7 +14,8 @@ int printChar4(int a, int b, int c, int d)
     write(1, " ", 1);
     write(1, &c, 1);
     write(1, &d, 1);
-    write(1, ", ", 1);
+    if (a != '9' || b != '9' || c != '9' || d != '9')
+        write(1, ", ", 3);
 }
 
 int my_print_comb2 (void)
@@ -40,10 +41,4 @@ int my_print_comb2 (void)
             a++;
         }
     }   
-}
-
-int main(int argc, char const *argv[])
-{
-    my_print_comb2();
-    return 0;
 }

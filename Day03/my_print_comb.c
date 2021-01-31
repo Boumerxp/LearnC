@@ -27,9 +27,3 @@ int my_print_comb (void)
         b > '9' ? a++, b = '0' : 0;
     }  
 }
-
-int main(void)
-{
-    my_print_comb();
-}
-
