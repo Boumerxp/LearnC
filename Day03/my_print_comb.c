@@ -20,24 +20,12 @@ int my_print_comb (void)
 {
     char a = '0', b = '0', c = '0';
 
-    while (a <= '7')
-    {
-        if (a < b && b < c)
-            print(a, b, c);
+    while (a <= '7') {
+        a < b && b < c ? print(a, b, c) : 0; //ternaire
         c++;
-        if (c > '9')
-        {
-            b++;
-            c = '0';
-        }
-        if (b > '9')
-        {
-            a++;
-            b = '0';
-        }
-        
-    }
-    
+        c > '9' ? b++, c = '0' : 0;
+        b > '9' ? a++, b = '0' : 0;
+    }  
 }
 
 int main(void)
