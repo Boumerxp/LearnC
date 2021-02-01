@@ -1,18 +1,15 @@
-#include<stdio.h>
+253
+afficher 3
+rapelle fonction
+afficher 5
+rappelle fonction
+afficher 2
 
-int main()
-{
-    int num;
-    
-    scanf("%d",&num);
-    
-    while(num > 0) //do till num greater than  0
-    {
-        int mod = num % 10;  //split last digit from number
-        printf("%d\n",mod); //print the digit. 
+253
+253 % 10 -> 3
+253 / 10 -> 25
+rappelle fonction(25)
+25 % 10 -> 5
+25 / 10 -> 2
 
-        num = num / 10;    //divide num by 10. num /= 10 also a valid one 
-    }
-    
-    return 0;
-}
+-1234 x -1
